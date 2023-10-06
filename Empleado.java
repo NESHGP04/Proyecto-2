@@ -16,7 +16,7 @@ public class Empleado {
     public void mostrarClientes(){
         System.out.println("Clientes: ");
         for (Cliente cliente : listaClientes){
-            System.out.println("Nombre: " + cliente.getNombre() + "Edad: " + cliente.getEdad() + "DPI: " + cliente.getDPI());
+            System.out.println("Nombre: " + cliente.getNombre() + " Edad: " + cliente.getEdad() + " DPI: " + cliente.getDPI());
         }
     }
 }
