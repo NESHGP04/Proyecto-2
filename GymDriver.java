@@ -13,12 +13,25 @@ public class GymDriver extends JFrame{
         lbBienvenida = new JLabel("ULTRAFIT", SwingConstants.CENTER);
         lbBienvenida.setFont(mainFont);
 
+        JButton botonCliente = new JButton("Cliente");
+        botonCliente.setFont(mainFont);
+
+        JButton botonEmpleado = new JButton("Empleado");
+        botonEmpleado.setFont(mainFont);
+
+        JPanel buttonsPanel = new JPanel();
+        buttonsPanel.setLayout(new GridLayout(1, 2, 10, 10));
+        buttonsPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
+        buttonsPanel.add(botonCliente);
+        buttonsPanel.add(botonEmpleado);
 
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
-        mainPanel.add(lbBienvenida);
+        mainPanel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+        mainPanel.add(lbBienvenida, BorderLayout.NORTH);
+        mainPanel.add(buttonsPanel, BorderLayout.CENTER);
 
-        add(mainPanel, BorderLayout.NORTH);
+        add(mainPanel);
 
         setTitle("ULTRAFIT");
         setSize(600,600);
