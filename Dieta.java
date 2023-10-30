@@ -9,8 +9,8 @@ public class Dieta {
     private ArrayList<String> alimentos;
     private int objetivo;
 
-    public Dieta(int objetivo) {
-        this.alimentos = new ArrayList<>();
+    public Dieta(int objetivo, ArrayList<String> alimentos) {
+        this.alimentos = alimentos;
         this.objetivo = objetivo;
     }
 
