@@ -9,6 +9,7 @@ public class Persona {
     protected String nombre;
     protected int edad;
     protected String dpi;
+    protected String sede;
 
     //Constructor
     public Persona(String nombre, int edad, String dpi){
@@ -19,7 +20,7 @@ public class Persona {
 
     public String toString(){
         return this.nombre + " de " + this.edad + " años y DPI " + this.dpi;
-    } //PONER??
+    } 
 
     //Getters
     protected String getNombre(){
@@ -35,7 +36,6 @@ public class Persona {
     }
 
     //Setters
-        //Void?
     protected void setNombre(String nombre){
         this.nombre=nombre;
     }

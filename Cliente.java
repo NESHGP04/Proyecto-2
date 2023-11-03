@@ -6,7 +6,6 @@
 public class Cliente extends Persona {
 
     //Definir variables
-        //PROTECTED?
     protected float peso;
     protected float altura;
     protected int metaPeso;

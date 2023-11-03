@@ -6,8 +6,11 @@
 import java.util.ArrayList;
 
 public class Dieta {
+    //private ArrayList<Alimento> alimentos = new ArrayList<Alimento>();
     private ArrayList<String> alimentos;
     private int objetivo;
+    private int tipo;
+    private String[] dias;
 
     public Dieta(int objetivo, ArrayList<String> alimentos) {
         this.alimentos = alimentos;

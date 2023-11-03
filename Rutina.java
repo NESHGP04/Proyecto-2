@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Rutina{
     private ArrayList<Secuencia> secuencias = new ArrayList<Secuencia>();
-    private String[] dias = new String[7];
+    private String[] dias = new String[6];
     private ArrayList<Maquina> maquinas = new ArrayList<Maquina>();
     private int tipo;
 

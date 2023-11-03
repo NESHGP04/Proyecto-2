@@ -9,10 +9,13 @@ import java.util.List;
 
 public class Empleado extends Persona {
     private List<Cliente> listaCliente;
+    private String id;
 
-    public Empleado(String nombre, int edad, String dpi){
+    public Empleado(String nombre, int edad, String dpi, String sede, String id){
         super(nombre, edad, dpi);
         listaCliente = new ArrayList<>();
+        this.sede=sede;
+        this.id=id;
     }
 
     public void registrarCliente(Cliente cliente){
@@ -24,5 +27,17 @@ public class Empleado extends Persona {
         for (Cliente cliente : listaCliente){
             System.out.println("Nombre: " + cliente.getNombre() + " Edad: " + cliente.getEdad() + " DPI: " + cliente.getDpi());
         }
+    }
+
+    public void agregarRutina(){
+
+    }
+
+    public void agregarDieta(){
+
+    }
+
+    public String getId(){
+        return "ID: " + this.id;
     }
 }

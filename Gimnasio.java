@@ -34,7 +34,7 @@ public class Gimnasio {
         StringBuilder sedesStr = new StringBuilder("Sedes disponibles:\n");
 
         for (Sede sede : sedes) {
-            sedesStr.append("Sede: ").append(sede.getNombre()).append("\n");
+            sedesStr.append("Sede: ").append(sede.getSede()).append("\n");
         }
 
         return sedesStr.toString();
