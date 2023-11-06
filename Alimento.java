@@ -3,7 +3,7 @@
  * CLASS
  */
 
- public class Alimento extends Dieta{
+ public class Alimento{
     private String nombre;
 
     public Alimento(String nombre) {

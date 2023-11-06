@@ -4,35 +4,34 @@
  */
 import java.util.ArrayList;
 
-public class Dieta {
-    private ArrayList<String> alimentos;
-    private int objetivo;
-    
-    public Dieta(int objetivo) {
-        this.objetivo = objetivo;
-        this.alimentos = new ArrayList<>();
+class Dieta {
+    private String tipoDieta;
+    private String dia;
+    private ArrayList<String> comidas;
+
+    public Dieta(String tipoDieta, String dia) {
+        this.tipoDieta = tipoDieta;
+        this.dia = dia;
+        this.comidas = new ArrayList<>();
     }
 
-    public ArrayList<String> getAlimentos() {
-        return alimentos;
+    public void agregarComida(String comida) {
+        comidas.add(comida);
     }
 
-    public void agregarAlimento(String alimento) {
-        alimentos.add(alimento);
-    }
+    public String toCSV() {
+        StringBuilder csvData = new StringBuilder();
+        csvData.append(tipoDieta).append(",").append(dia);
 
-    public int getObjetivo() {
-        return objetivo;
-    }
-
-    public void setObjetivo(int objetivo) {
-        this.objetivo = objetivo;
-    }
-
-    public void mostrarAlimentos() {
-        System.out.println("Lista de alimentos en la dieta:");
-        for (String alimento : alimentos) {
-            System.out.println("Alimento: " + alimento);
+        for (int i = 0; i < 5; i++) {
+            if (i < comidas.size()) {
+                csvData.append(",").append(comidas.get(i));
+            } else {
+                csvData.append(",");
+            }
         }
+
+        csvData.append("\n");
+        return csvData.toString();
     }
 }
