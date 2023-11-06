@@ -3,11 +3,18 @@
  * CLASS
  */
 
-import java.util.*;
-public class Alimento extends Dieta{
-    ArrayList<String> items = new ArrayList<>();
+ public class Alimento extends Dieta{
+    private String nombre;
 
-    public Alimento(int objetivo,ArrayList<String> alimentos){
-        super(objetivo, alimentos);
+    public Alimento(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }

@@ -2,19 +2,15 @@
  * Autores: Marinés García 23391, Nery Molina 23218, Kevin Villagrán 23584, Álvaro León 23274
  * CLASS
  */
-
 import java.util.ArrayList;
 
 public class Dieta {
-    //private ArrayList<Alimento> alimentos = new ArrayList<Alimento>();
     private ArrayList<String> alimentos;
     private int objetivo;
-    private int tipo;
-    private String[] dias;
-
-    public Dieta(int objetivo, ArrayList<String> alimentos) {
-        this.alimentos = alimentos;
+    
+    public Dieta(int objetivo) {
         this.objetivo = objetivo;
+        this.alimentos = new ArrayList<>();
     }
 
     public ArrayList<String> getAlimentos() {
@@ -36,7 +32,7 @@ public class Dieta {
     public void mostrarAlimentos() {
         System.out.println("Lista de alimentos en la dieta:");
         for (String alimento : alimentos) {
-            System.out.println("Alimentos" + alimento);
+            System.out.println("Alimento: " + alimento);
         }
     }
 }
