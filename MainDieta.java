@@ -1,6 +1,4 @@
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -33,16 +31,28 @@ public class MainDieta {
             }
         }
 
-        String csvFileName = "planAlimentacion.csv";
+        String csvName = "planAlimentacion.csv";
 
-        try (PrintWriter writer = new PrintWriter(new FileWriter(csvFileName))) {
-            writer.println("TipoDieta,Dia,Comida1,Comida2,Comida3,Comida4,Comida5");
+        try {
+            boolean isFileEmpty = true;
+            File file = new File(csvName);
+
+            if (file.exists() && file.length() > 0) {
+                isFileEmpty = false;
+            }
+
+            PrintWriter writer = new PrintWriter(new FileWriter(csvName, true));
+
+            if (isFileEmpty) {
+                writer.println("TipoDieta,Dia,Comida1,Comida2,Comida3,Comida4,Comida5");
+            }
 
             for (Dieta dieta : dietas) {
                 writer.print(dieta.toCSV());
             }
 
-            System.out.println("Los datos se han guardado en " + csvFileName);
+            writer.close();
+            System.out.println("Los datos se han agregado al archivo " + csvName);
         } catch (IOException e) {
             e.printStackTrace();
         }
