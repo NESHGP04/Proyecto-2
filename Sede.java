@@ -96,4 +96,22 @@ public class Sede {
                 ", clientes=" + clientes +
                 '}';
     }
-}
+    public String consultarHorariosDisponibles() {
+            StringBuilder horariosDisponibles = new StringBuilder("Horarios disponibles:\n");
+
+            for (Map.Entry<String, String> entry : horarios.entrySet()) {
+                String dia = entry.getKey();
+                String horario = entry.getValue();
+
+                // Puedes agregar tus criterios aqui para determinar la disponibilidad.
+                // Por ejemplo, si el horario esta vacio (no asignado), considerarlo disponible.
+                if (horario.isEmpty()) {
+                    horariosDisponibles.append(dia).append(": Todo el día\n");
+                } else {
+                    horariosDisponibles.append(dia).append(": ").append(horario).append("\n");
+                }
+            }
+
+            return horariosDisponibles.toString();
+        }
+    }

@@ -2,7 +2,8 @@
  * Autores: Marinés García 23391, Nery Molina 23218, Kevin Villagrán 23584, Álvaro León 23274
  * CLASS
  */
-
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ArrayList;
 
 public class Gimnasio {
@@ -38,5 +39,16 @@ public class Gimnasio {
         }
 
         return sedesStr.toString();
+    }
+    public boolean verificarDisponibilidad() {
+        for (Sede sede : sedes) {
+            Map<String, String> horarios = sede.getHorarios();
+            for (String horario : horarios.values()) {
+                if (!horario.isEmpty()) {
+                    return true; // Hay al menos un horario disponible en esta sede.
+                }
+            }
+        }
+        return false; // No hay horarios disponibles en ninguna sede.
     }
 }
