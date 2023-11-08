@@ -10,6 +10,8 @@ public class Secuencia{
     private int series;
     private int descanso;
 
+    String s = String.valueOf(repeticiones); 
+
     public Ejercicio getEjercicio(){
         return ejercicio;
     }
@@ -48,4 +50,13 @@ public class Secuencia{
         this.series = series;
         this.descanso = descanso;
     }
+
+    // public String toString(){
+    //     return "Ejercio: " + ejercicio+ " Repeticiones: " + repeticiones+ " Series: " + series+ " Descanso: " + descanso;
+    // }
+
+    public String toStringSeries(){
+        return "" + series;
+    }
+
 }
