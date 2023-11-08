@@ -63,7 +63,7 @@ public class MainRutina {
 
             rutinas.add(rutina);
 
-            System.out.println("¿Desea ingresar otra rutina? (Sí/No)");
+            System.out.println("\n¿Desea ingresar otra rutina? (Sí/No)");
             String respuesta = scanner.nextLine().toLowerCase();
             if (!respuesta.equals("si")) {
                 break;
@@ -72,7 +72,7 @@ public class MainRutina {
 
         String csvFileName = "planRutinas.csv";
 
-        try (PrintWriter writer = new PrintWriter(new FileWriter(csvFileName))) {
+        try {
             boolean isFileEmpty = true;
             File file = new File(csvFileName);
 
@@ -80,17 +80,18 @@ public class MainRutina {
                 isFileEmpty = false;
             }
 
-            //PrintWriter writer = new PrintWriter(new FileWriter(csvFileName, true));
-            
+            PrintWriter writer = new PrintWriter(new FileWriter(csvFileName, true));
+
             if (isFileEmpty) {
-                writer.println("Tipo,Dia,Ejercicio,Descripción,Máquina,Repeticiones,Series,Descanso");
+                writer.println("TipoDieta,Dia,Comida1,Comida2,Comida3,Comida4,Comida5");
             }
-            
+
             for (Rutina rutina : rutinas) {
                 writer.print(rutina.toCSV());
             }
 
-            System.out.println("Los datos se han guardado en " + csvFileName);
+            writer.close();
+            System.out.println("Los datos se han agregado al archivo " + csvFileName);
         } catch (IOException e) {
             e.printStackTrace();
         }
