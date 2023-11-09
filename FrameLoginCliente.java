@@ -4,7 +4,7 @@ import java.awt.event.*;
 
 public class FrameLoginCliente extends JFrame {
 
-    int fieldWidth = 400;
+    int fieldWidth = 500;
     int fieldHeight = 50;
 
     public FrameLoginCliente(JFrame parentFrame) {
@@ -29,42 +29,61 @@ public class FrameLoginCliente extends JFrame {
 
     private void initialize(JFrame parentFrame) {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setSize(400, 400);
 
+        // Obtener las dimensiones de la imagen
         ImageIcon backgroundIcon = new ImageIcon("background.png");
-        JLabel background = new JLabel(backgroundIcon);
-        setContentPane(background);
-        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
+        int width = backgroundIcon.getIconWidth();
+        int height = backgroundIcon.getIconHeight();
+        setPreferredSize(new Dimension(width, height));
+
+        JPanel panel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.drawImage(backgroundIcon.getImage(), 0, 0, getWidth(), getHeight(), this);
+            }
+        };
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        panel.setPreferredSize(new Dimension(width, height)); // Establecer el tamaño del panel igual al de la imagen
 
         // Crear el título con una franja negra
-        JLabel title = new JLabel("Iniciar sesión", SwingConstants.CENTER);
+        JLabel title = new JLabel("Iniciar sesion - Cliente", SwingConstants.CENTER);
         title.setFont(new Font("Bahnschrift Light", Font.PLAIN, 72));
         title.setOpaque(true);
         title.setBackground(Color.BLACK);
         title.setForeground(Color.WHITE);
         title.setAlignmentX(Component.CENTER_ALIGNMENT);
         title.setMaximumSize(new Dimension(Integer.MAX_VALUE, 2000)); // Ajusta el tamaño vertical aquí
-        add(title);
+        panel.add(title);
 
-        
-        // Crear un panel con opacidad baja
-        JPanel panel = new JPanel();
-        panel.setBackground(new Color(0, 0, 0, 200)); // El último número es el nivel de transparencia (0-255)
-        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-        panel.add(Box.createRigidArea(new Dimension(10, 0)));
-        panel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        // Crear un panel para los elementos del formulario con un fondo opaco
+        JPanel formPanel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.setColor(new Color(0, 0, 0, 200)); // Color de fondo opaco
+                g.fillRect(0, 0, getWidth(), getHeight());
+            }
+        };
+        formPanel.setLayout(new BoxLayout(formPanel, BoxLayout.Y_AXIS));
+        formPanel.setOpaque(false); // Hacerlo transparente para mostrar el fondo pintado
+        //formPanel.setPreferredSize(new Dimension(width, height)); // Tamaño igual al de la imagen
 
         JLabel correoLabel = createLabel("Correo: ");
-        panel.add(correoLabel);
+        formPanel.add(correoLabel);
 
         JTextField correoField = createTextField();
-        panel.add(correoField);
+        formPanel.add(correoField);
 
         JLabel passwordLabel = createLabel("Contraseña: ");
-        panel.add(passwordLabel);
+        formPanel.add(passwordLabel);
 
-        JPasswordField passwordField = createTextField();
-        panel.add(passwordField);
+        JPasswordField passwordField = new JPasswordField();
+        passwordField.setMaximumSize(new Dimension(fieldWidth, fieldHeight));
+        passwordField.setPreferredSize(new Dimension(fieldWidth, fieldHeight));
+        passwordField.setAlignmentX(Component.CENTER_ALIGNMENT);
+        passwordField.setFont(new Font("Bahnschrift Light", Font.BOLD, 30));
+        formPanel.add(passwordField);
 
         JButton loginButton = new JButton("Ingresar");
         loginButton.setBackground(Color.WHITE);
@@ -84,12 +103,6 @@ public class FrameLoginCliente extends JFrame {
         buttonPanel.add(loginButton);
         buttonPanel.add(Box.createRigidArea(new Dimension(10, 0)));
 
-        // Obtener las dimensiones de la imagen
-        int width = backgroundIcon.getIconWidth();
-        int height = backgroundIcon.getIconHeight();
-
-        // Establecer el tamaño de la ventana en función de las dimensiones de la imagen
-        setPreferredSize(new Dimension(width, height));
         pack();
         
         // Crear el panel para los botones
@@ -99,12 +112,17 @@ public class FrameLoginCliente extends JFrame {
         sizePanel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Añadir el panel de botones al marco
-        add(Box.createRigidArea(new Dimension(0, 10)));
-        add(panel);
-        add(buttonPanel);
-        add(sizePanel);
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+        panel.add(formPanel);
+        panel.add(buttonPanel);
+
+        // Crear el panel de desplazamiento con el panel principal
+        JScrollPane scrollPane = new JScrollPane(panel);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
         // Hacer visible el marco
+        getContentPane().add(scrollPane);
         pack();
         setVisible(true);
     }

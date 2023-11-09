@@ -9,15 +9,23 @@ public class FramePreLoginCliente extends JFrame {
     }
 
     private void initialize(JFrame parentFrame) {
-        // Crear el marco
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setSize(400, 400);
-
-        // Establecer la imagen de fondo
+        
+        // Obtener las dimensiones de la imagen
         ImageIcon backgroundIcon = new ImageIcon("background.png");
-        JLabel background = new JLabel(backgroundIcon);
-        setContentPane(background);
-        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
+        int width = backgroundIcon.getIconWidth();
+        int height = backgroundIcon.getIconHeight();
+        setPreferredSize(new Dimension(width, height));
+
+        JPanel panel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.drawImage(backgroundIcon.getImage(), 0, 0, getWidth(), getHeight(), this);
+            }
+        };
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        panel.setPreferredSize(new Dimension(width, height)); // Establecer el tamaño del panel igual al de la imagen
 
         // Crear el título con una franja negra
         JLabel title = new JLabel("Cliente", SwingConstants.CENTER);
@@ -27,7 +35,7 @@ public class FramePreLoginCliente extends JFrame {
         title.setForeground(Color.WHITE);
         title.setAlignmentX(Component.CENTER_ALIGNMENT);
         title.setMaximumSize(new Dimension(Integer.MAX_VALUE, 2000)); // Ajusta el tamaño vertical aquí
-        add(title);
+        panel.add(title);
 
         // Crear los botones
         JButton loginButton = new JButton("Iniciar sesión");
@@ -71,10 +79,16 @@ public class FramePreLoginCliente extends JFrame {
         buttonPanel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Añadir el panel de botones al marco
-        add(Box.createRigidArea(new Dimension(0, 10)));
-        add(buttonPanel);
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+        panel.add(buttonPanel);
 
-        // Hacer visible el marco
+        // Crear el panel de desplazamiento con el panel principal
+        JScrollPane scrollPane = new JScrollPane(panel);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+
+        //Mostrar marco
+        getContentPane().add(scrollPane);
         pack();
         setVisible(true);
     }

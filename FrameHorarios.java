@@ -2,17 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class FrameCliente extends JFrame {
+public class FrameHorarios extends JFrame {
 
-    public FrameCliente(JFrame parentFrame) {
+    public FrameHorarios(JFrame parentFrame) {
         initialize(parentFrame);
     }
 
-    private JButton createButton(String buttonText, String buttonIcon){
+    private JButton createButton(String buttonText){
         JButton button = new JButton(buttonText);
         button.setBackground(Color.WHITE);
         button.setPreferredSize(new Dimension(500, 100)); // Ajusta el tamaño horizontal aquí
-        button.setIcon(new ImageIcon(new ImageIcon(buttonIcon).getImage().getScaledInstance(80, 80, java.awt.Image.SCALE_SMOOTH))); // Añade tu imagen aquí
         button.setFont(new Font("Bahnschrift Light", Font.BOLD, 30));
         return button;
     }
@@ -47,17 +46,17 @@ public class FrameCliente extends JFrame {
         panel.add(title);
 
         // Crear los botones
-        JButton routinesButton = createButton("Rutinas", "rutina.png");
+        JButton routinesButton = createButton("Lunes");
 
-        JButton schedulesButton = createButton("Horarios", "horario.png");
+        JButton schedulesButton = createButton("Martes");
 
-        JButton foodButton = createButton("Alimentacion", "alimentacion.png");
+        JButton foodButton = createButton("Miercoles");
 
-        JButton pricesButton = createButton("Precios", "precio.png");
+        JButton pricesButton = createButton("Jueves");
 
-        JButton availabilityButton = createButton("Disponibilidad", "disponibilidad.png");
+        JButton availabilityButton = createButton("Viernes");
 
-        JButton returnButton = createButton("Regresar", "regresar.png");
+        JButton returnButton = createButton("Sabado");
 
         returnButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

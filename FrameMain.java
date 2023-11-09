@@ -12,13 +12,22 @@ public class FrameMain extends JFrame {
         /*******BIENVENIDA*******/
         // Crear el marco
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setSize(400, 400);
 
-        // Establecer la imagen de fondo
+        // Obtener las dimensiones de la imagen
         ImageIcon backgroundIcon = new ImageIcon("background.png");
-        JLabel background = new JLabel(backgroundIcon);
-        setContentPane(background);
-        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
+        int width = backgroundIcon.getIconWidth();
+        int height = backgroundIcon.getIconHeight();
+        setPreferredSize(new Dimension(width, height));
+
+        JPanel panel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.drawImage(backgroundIcon.getImage(), 0, 0, getWidth(), getHeight(), this);
+            }
+        };
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        panel.setPreferredSize(new Dimension(width, height)); // Establecer el tamaño del panel igual al de la imagen
 
         // Crear el título con una franja negra
         JLabel title = new JLabel("¡Bienvenido!", SwingConstants.CENTER);
@@ -28,7 +37,7 @@ public class FrameMain extends JFrame {
         title.setForeground(Color.WHITE);
         title.setAlignmentX(Component.CENTER_ALIGNMENT);
         title.setMaximumSize(new Dimension(Integer.MAX_VALUE, 2000)); // Ajusta el tamaño vertical aquí
-        add(title);
+        panel.add(title);
 
         // Crear los botones
         JButton clientButton = new JButton("Cliente");
@@ -43,7 +52,6 @@ public class FrameMain extends JFrame {
         clientButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 openPreLoginClienteFrame();
-                //frame.dispose();
             }
         });
 
@@ -56,6 +64,12 @@ public class FrameMain extends JFrame {
         newimg = img.getScaledInstance(80, 80, java.awt.Image.SCALE_SMOOTH); // Ajusta el tamaño de la imagen aquí
         employeeButton.setIcon(new ImageIcon(newimg));
 
+        employeeButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                openLoginEmpleadoFrame();
+            }
+        });
+
         // Crear el panel para los botones
         JPanel buttonPanel = new JPanel();
         buttonPanel.setOpaque(false);
@@ -65,10 +79,16 @@ public class FrameMain extends JFrame {
         buttonPanel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Añadir el panel de botones al marco
-        add(Box.createRigidArea(new Dimension(0, 10)));
-        add(buttonPanel);
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+        panel.add(buttonPanel);
+
+        // Crear el panel de desplazamiento con el panel principal
+        JScrollPane scrollPane = new JScrollPane(panel);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
         // Hacer visible el marco
+        getContentPane().add(scrollPane);
         pack();
         setVisible(true);
     }
@@ -77,6 +97,13 @@ public class FrameMain extends JFrame {
         FramePreLoginCliente framePreloginCliente = new FramePreLoginCliente(this);
         framePreloginCliente.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         framePreloginCliente.setVisible(true);
+        this.dispose();
+    }
+
+        private void openLoginEmpleadoFrame() {
+        FrameLoginEmpleado frameLoginEmpleado = new FrameLoginEmpleado(this);
+        frameLoginEmpleado.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frameLoginEmpleado.setVisible(true);
         this.dispose();
     }
 }

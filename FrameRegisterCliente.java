@@ -22,8 +22,8 @@ public class FrameRegisterCliente extends JFrame {
     private JButton createButton(String buttonText, String buttonIcon, int x, int y){
         JButton button = new JButton(buttonText);
         button.setBackground(Color.WHITE);
-        button.setPreferredSize(new Dimension(x, y)); // Ajusta el tamaño horizontal aquí
-        button.setIcon(new ImageIcon(new ImageIcon(buttonIcon).getImage().getScaledInstance(80, 80, java.awt.Image.SCALE_SMOOTH))); // Añade tu imagen aquí
+        button.setPreferredSize(new Dimension(x, y)); 
+        button.setIcon(new ImageIcon(new ImageIcon(buttonIcon).getImage().getScaledInstance(80, 80, java.awt.Image.SCALE_SMOOTH)));
         button.setFont(new Font("Bahnschrift Light", Font.BOLD, 30));
         return button;
     }
@@ -36,72 +36,133 @@ public class FrameRegisterCliente extends JFrame {
         return label;
     } 
 
+    private JCheckBox createCheckBox(String text){
+        JCheckBox checkBox = new JCheckBox(text);
+        checkBox.setForeground(Color.WHITE);
+        checkBox.setOpaque(false); // Hacer el checkbox transparente
+        checkBox.setAlignmentX(Component.CENTER_ALIGNMENT); // Centrar el checkbox
+        checkBox.setFont(new Font("Bahnschrift Light", Font.PLAIN, 25));
+        return checkBox;
+    }
+
     private void initialize(JFrame parentFrame) {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setSize(400, 400);
-
+        
+        // Obtener las dimensiones de la imagen
         ImageIcon backgroundIcon = new ImageIcon("background.png");
-        JLabel background = new JLabel(backgroundIcon);
+        int width = backgroundIcon.getIconWidth();
+        int height = backgroundIcon.getIconHeight();
+        setPreferredSize(new Dimension(width, height));
 
-        JScrollPane scrollPane = new JScrollPane(background);
-        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+        JPanel panel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.drawImage(backgroundIcon.getImage(), 0, 0, getWidth(), getHeight(), this);
+            }
+        };
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        panel.setPreferredSize(new Dimension(width, height)); // Establecer el tamaño del panel igual al de la imagen
 
-        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
-
-        // Crear el título con una franja negra
         JLabel title = new JLabel("Registrarse", SwingConstants.CENTER);
         title.setFont(new Font("Bahnschrift Light", Font.PLAIN, 72));
         title.setOpaque(true);
         title.setBackground(Color.BLACK);
         title.setForeground(Color.WHITE);
         title.setAlignmentX(Component.CENTER_ALIGNMENT);
-        title.setMaximumSize(new Dimension(Integer.MAX_VALUE, 2000)); // Ajusta el tamaño vertical aquí
-        add(title);
+        title.setMaximumSize(new Dimension(Integer.MAX_VALUE, 2000));
+        panel.add(title);
         
-        // Crear un panel con opacidad baja
-        JPanel panel = new JPanel();
-        panel.setBackground(new Color(0, 0, 0, 200)); // El último número es el nivel de transparencia (0-255)
-        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-        panel.add(Box.createRigidArea(new Dimension(10, 0)));
-        panel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        // Crear un panel para los elementos del formulario con un fondo opaco
+        JPanel formPanel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.setColor(new Color(0, 0, 0, 200)); // Color de fondo opaco
+                g.fillRect(0, 0, getWidth(), getHeight());
+            }
+        };
+        formPanel.setLayout(new BoxLayout(formPanel, BoxLayout.Y_AXIS));
+        formPanel.setOpaque(false); // Hacerlo transparente para mostrar el fondo pintado
 
         JLabel nombreLabel = createLabel("Nombre: ");
-        panel.add(nombreLabel);
+        formPanel.add(nombreLabel);
 
         JTextField nombreField = createTextField();
-        panel.add(nombreField);
+        formPanel.add(nombreField);
 
         JLabel apellidoLabel = createLabel("Apellido: ");
-        panel.add(apellidoLabel);
+        formPanel.add(apellidoLabel);
 
         JTextField apellidoField = createTextField();
-        panel.add(apellidoField);
+        formPanel.add(apellidoField);
 
         JLabel dpiLabel = createLabel("DPI: ");
-        panel.add(dpiLabel);
+        formPanel.add(dpiLabel);
 
         JTextField dpiField = createTextField();
-        panel.add(dpiField);           
+        formPanel.add(dpiField);           
 
         JLabel correoLabel = createLabel("Correo: ");
-        panel.add(correoLabel);
+        formPanel.add(correoLabel);
 
         JTextField correoField = createTextField();
-        panel.add(correoField);
+        formPanel.add(correoField);
 
         JLabel passwordLabel = createLabel("Contraseña: ");
-        panel.add(passwordLabel);
+        formPanel.add(passwordLabel);
 
         JPasswordField passwordField = new JPasswordField();
         passwordField.setMaximumSize(new Dimension(fieldWidth, fieldHeight));
         passwordField.setPreferredSize(new Dimension(fieldWidth, fieldHeight));
         passwordField.setAlignmentX(Component.CENTER_ALIGNMENT);
-        panel.add(passwordField);
-
+        passwordField.setFont(new Font("Bahnschrift Light", Font.BOLD, 30));
+        formPanel.add(passwordField);
+        
+        // Crear las etiquetas y los checkbox para el objetivo
         JLabel objectiveLabel = createLabel("Objetivo: ");
-        panel.add(objectiveLabel);
+        formPanel.add(objectiveLabel);
 
+        JCheckBox loseWeightCheckBox = createCheckBox("Bajar peso");
+        JCheckBox maintainWeightCheckBox = createCheckBox("Bajar peso");
+        JCheckBox gainWeightCheckBox = createCheckBox("Subir peso");
+
+        // Agrupar las casillas de verificación
+        ButtonGroup objectiveGroup = new ButtonGroup();
+        objectiveGroup.add(loseWeightCheckBox);
+        objectiveGroup.add(maintainWeightCheckBox);
+        objectiveGroup.add(gainWeightCheckBox);
+
+        // Agregar las casillas al panel de casillas
+        formPanel.add(loseWeightCheckBox);
+        formPanel.add(maintainWeightCheckBox);
+        formPanel.add(gainWeightCheckBox);
+
+        // Crear las etiquetas y los checkbox para el tipo de cliente
+        JLabel planLabel = createLabel("Plan: ");
+        formPanel.add(planLabel);
+
+        JCheckBox basicCheckBox = createCheckBox("Basico");
+        JCheckBox fitnessCheckBox = createCheckBox("Fitness");
+        JCheckBox nutriCheckBox = createCheckBox("Nutricional");
+        JCheckBox premiumCheckBox = createCheckBox("Premium");
+
+        ButtonGroup planGroup = new ButtonGroup();
+        planGroup.add(basicCheckBox);
+        planGroup.add(fitnessCheckBox);
+        planGroup.add(nutriCheckBox);
+        planGroup.add(premiumCheckBox);
+
+        formPanel.add(basicCheckBox);
+        formPanel.add(fitnessCheckBox);
+        formPanel.add(nutriCheckBox);
+        formPanel.add(premiumCheckBox);
+
+        // Agregar el formPanel al panel principal (panel)
+        panel.add(Box.createVerticalGlue()); // Esto agrega espacio entre la imagen y el formulario
+        panel.add(formPanel);
+
+        // Botón de ingreso
         JButton loginButton = createButton("Ingresar","cliente.png", 500, 100);
 
         loginButton.addActionListener(new ActionListener() {
@@ -114,30 +175,18 @@ public class FrameRegisterCliente extends JFrame {
         JPanel buttonPanel = new JPanel();
         buttonPanel.setOpaque(false);
         buttonPanel.add(loginButton);
-        buttonPanel.add(Box.createRigidArea(new Dimension(10, 0)));
+        buttonPanel.setAlignmentX(Component.CENTER_ALIGNMENT); // Centrar el botón
 
-        // Obtener las dimensiones de la imagen
-        int width = backgroundIcon.getIconWidth();
-        int height = backgroundIcon.getIconHeight();
+        // Añadir componentes al panel principal
+        panel.add(Box.createVerticalGlue()); // Esto agrega espacio entre el formulario y el botón
+        panel.add(buttonPanel);
 
-        // Establecer el tamaño de la ventana en función de las dimensiones de la imagen
-        setPreferredSize(new Dimension(width, height));
-        pack();
-        
-        // Crear el panel para los botones
-        JPanel sizePanel = new JPanel();
-        sizePanel.setOpaque(false);
-        sizePanel.add(Box.createRigidArea(new Dimension(10, 0)));
-        sizePanel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        // Crear el panel de desplazamiento con el panel principal
+        JScrollPane scrollPane = new JScrollPane(panel);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
-        // Añadir el panel de botones al marco
-        add(scrollPane);
-        add(Box.createRigidArea(new Dimension(0, 10)));
-        add(panel);
-        add(buttonPanel);
-        add(sizePanel);
-
-        // Hacer visible el marco
+        getContentPane().add(scrollPane);
         pack();
         setVisible(true);
     }
