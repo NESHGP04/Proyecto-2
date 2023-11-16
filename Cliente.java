@@ -5,18 +5,18 @@
 
 public class Cliente extends Persona {
 
-    //Definir variables
+    // Definir variables
     protected float peso;
     protected float altura;
     protected int metaPeso;
     protected String id;
-        //De otras clases
+    // De otras clases
     protected Rutina rutinaEjercicios;
     protected Dieta dieta;
     protected Sede sede;
 
-    //Constructor
-    public Cliente(String nombre, int edad, String dpi, float peso, float altura, int metaPeso, String id, Rutina rutinaEjercicios, Dieta dieta, Sede sede){
+    // Constructor
+    public Cliente(String nombre, int edad, String dpi, float peso, float altura, int metaPeso, String id, Rutina rutinaEjercicios, Dieta dieta, Sede sede) {
         super(nombre, edad, dpi);
         this.peso = peso;
         this.altura = altura;
@@ -27,41 +27,57 @@ public class Cliente extends Persona {
         this.sede = sede;
     }
 
-    //Getters
-    public float getPeso(){
+    // Getters
+    public float getPeso() {
         return this.peso;
     }
 
-    public float getAltura(){
+    public float getAltura() {
         return this.altura;
     }
 
-    public int getMetaPeso(){
+    public int getMetaPeso() {
         return this.metaPeso;
     }
 
-    public String getId(){
+    public String getId() {
         return this.id;
     }
 
-    public Sede getSede(){
+    public Sede getSede() {
         return this.sede;
     }
 
-    //Setters TERMINAR
-    public void setPeso(double peso){
-    
+    // Setters
+    public void setPeso(float peso) {
+        this.peso = peso;
     }
 
-    public void setAltura(double altura){
-       
+    public void setAltura(float altura) {
+        this.altura = altura;
     }
 
-    public void setMetaPeso(double metaPeso){
-       
+    public void setMetaPeso(int metaPeso) {
+        this.metaPeso = metaPeso;
     }
 
-    public void setSede(Sede sede){
-       
+    public void setSede(Sede sede) {
+        this.sede = sede;
+    }
+    public Dieta getDieta() {
+        return this.dieta;
+    }
+
+    public void setDieta(Dieta dieta) {
+        this.dieta = dieta;
+    }
+
+    public Rutina getRutina() {
+        return this.rutinaEjercicios;
+    }
+
+    public void setRutina(Rutina rutina) {
+        this.rutinaEjercicios = rutina;
     }
 }
+

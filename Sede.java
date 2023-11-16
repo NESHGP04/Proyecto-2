@@ -114,4 +114,15 @@ public class Sede {
 
             return horariosDisponibles.toString();
         }
+        public double calcularPrecioCliente(Cliente cliente) {
+            // Obtener el precio base de la sede
+            double precioBase = this.getPrecio();
+
+            // Verificar el tipo de cliente y ajustar el precio
+            if (cliente instanceof Premium) {
+                return precioBase + 100;
+            } else {
+                return precioBase;
+            }
+        }
     }

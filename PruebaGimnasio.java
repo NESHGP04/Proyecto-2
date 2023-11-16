@@ -1,8 +1,11 @@
+import java.util.Scanner;
+
 public class PruebaGimnasio {
     public static void main(String[] args) {
         // Crear un gimnasio
         Gimnasio gimnasio = new Gimnasio();
 
+        // Crear sedes y agregarlas al gimnasio
         Sede sede1 = new Sede("Sede 1");
         sede1.agregarHorario("Lunes", "08:00 AM - 12:00 PM");
         sede1.agregarHorario("Miércoles", "09:00 AM - 11:00 AM");
@@ -41,3 +44,4 @@ public class PruebaGimnasio {
         System.out.println("El precio para la sede 1 según el cliente seleccionado es: $" + precioCliente);
     }
 }
+
