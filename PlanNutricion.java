@@ -3,11 +3,10 @@
  * INTERFACE
  */
 
-public interface PlanNutricion{
+public interface PlanNutricion {
+    Dieta getDieta();
 
-    public Dieta getDieta();
+    void setDieta(Dieta dieta);  
 
-    public void setDieta();
-
-    public void consultarNutricionista();
-} 
+    void consultarNutricionista();
+}

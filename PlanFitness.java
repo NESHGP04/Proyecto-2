@@ -3,11 +3,10 @@
  * INTERFACE
  */
 
-public interface PlanFitness{
+public interface PlanFitness {
+    Rutina getRutina();
 
-    public Rutina getRutina();
+    void setRutina(Rutina rutina); 
 
-    public void setRutina();
-
-    public void consultarEntrenador();
-} 
+    void consultarEntrenador();
+}

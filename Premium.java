@@ -3,41 +3,48 @@
  * CLASS
  */
 
-public class Premium extends Cliente implements PlanNutricion, PlanFitness{
-    
-    //Constructor
-        public Premium(String nombre, int edad, String dpi, float peso, float altura, int metaPeso, String id, Rutina rutinaEjercicios, Dieta dieta, Sede sede){
-            super(nombre, edad, dpi, peso, altura, metaPeso, id, rutinaEjercicios,dieta,sede); //Poner rutina, dieta y sede?}
-        }
+public class Premium extends Cliente implements PlanNutricion, PlanFitness {
 
-        @Override
-        public Dieta getDieta(){
-            return dieta;
-        }
-    
-        @Override
-        public void setDieta(){
-            //this.dieta = dieta;
-        }
-    
-        @Override
-        public void consultarNutricionista(){
-    
-        }
+    // Constructor
+    public Premium(String nombre, int edad, String dpi, float peso, float altura, int metaPeso, String id, Rutina rutinaEjercicios, Dieta dieta, Sede sede) {
+        super(nombre, edad, dpi, peso, altura, metaPeso, id, rutinaEjercicios, dieta, sede);
+    }
 
-        @Override
-        public Rutina getRutina(){
-            return rutinaEjercicios;
-        }
+    public double obtenerPrecio() {
+        // Lógica para obtener el precio premium de la sede
+        return getSede().getPrecio() + 100;
+    }
 
-        @Override
-        public void setRutina(){
+    // Implementación de métodos de las interfaces PlanNutricion y PlanFitness
+    // ...
 
-        }
+    @Override
+    public Dieta getDieta() {
+        return super.getDieta();
+    }
 
-        @Override
-        public void consultarEntrenador(){
-            
-        }
+    @Override
+    public void setDieta(Dieta dieta) {
+        super.setDieta(dieta);
+    }
 
+    @Override
+    public void consultarNutricionista() {
+        // Implementación de consultarNutricionista si es necesario
+    }
+
+    @Override
+    public Rutina getRutina() {
+        return super.getRutina();
+    }
+
+    @Override
+    public void setRutina(Rutina rutina) {
+        super.setRutina(rutina);
+    }
+
+    @Override
+    public void consultarEntrenador() {
+        // Implementación de consultarEntrenador si es necesario
+    }
 }
