@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" style="-fx-background-color: transparent; -fx-background-image: url('img/background.png'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/background.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="102.0" prefWidth="1280.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="618.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" text="DIETA" textAlignment="CENTER" textFill="WHITE" translateY="20.0">
+               <font>
+                  <Font name="Montserrat Thin" size="47.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button layoutX="754.0" layoutY="647.0" minHeight="-Infinity" mnemonicParsing="false" prefHeight="59.0" prefWidth="232.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff; -fx-border-radius: 0; -fx-background-insets: 0; -fx-pressed-fill: #d9d9d9; -fx-background-insets: 1;" text="Regresar" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" translateX="-10.0">
+               <image>
+                  <Image url="@img/regresar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane layoutX="67.0" layoutY="134.0" opacity="0.85" prefHeight="488.0" prefWidth="885.0" style="-fx-background-color: &quot;black&quot;;">
+         <children>
+            <VBox prefHeight="488.0" prefWidth="885.0">
+               <children>
+                  <HBox prefHeight="37.0" prefWidth="885.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="283.0" text="Dia" textOverrun="CLIP">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="283.0" text="Desayuno" textOverrun="CLIP">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="283.0" text="Refacción 1" textOverrun="CLIP">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="283.0" text="Almuerzo" textOverrun="CLIP">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="283.0" text="Refacción 2" textOverrun="CLIP">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="283.0" text="Cena" textOverrun="CLIP">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="85.0" prefWidth="885.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: gray;" text="Lunes" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="85.0" prefWidth="885.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: gray;" text="Martes" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="85.0" prefWidth="885.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: gray;" text="Miercoles" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="85.0" prefWidth="885.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: gray;" text="Jueves" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="85.0" prefWidth="885.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: gray;" text="Viernes" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="85.0" prefWidth="885.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: gray;" text="Sabado" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="85.0" prefWidth="885.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: gray;" text="Domingo" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="45.0" prefWidth="150.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="782.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <Label prefHeight="45.0" prefWidth="369.0" text="Aqui va la comida del usuario, esta puede ser cualquier cosa asignada." textFill="WHITE">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
