@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" style="-fx-background-color: transparent; -fx-background-image: url('img/background.png'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegisterUserFrameController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/background.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="102.0" prefWidth="1280.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="618.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" text="Registro" textAlignment="CENTER" textFill="WHITE" translateY="20.0">
+               <font>
+                  <Font name="Montserrat Thin" size="47.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="btnRegistrarse" layoutX="296.0" layoutY="575.0" mnemonicParsing="false" onAction="#btnRegistrarseClicked" prefHeight="100.0" prefWidth="424.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff; -fx-border-radius: 0; -fx-background-insets: 0; -fx-pressed-fill: #d9d9d9; -fx-background-insets: 1;" text="Registrarse" wrapText="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" translateX="-10.0">
+               <image>
+                  <Image url="@../img/cliente.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ScrollPane layoutX="295.0" layoutY="111.0" opacity="0.85" prefHeight="457.0" prefWidth="424.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1126.0" prefWidth="405.0">
+               <children>
+                  <Pane prefHeight="1126.0" prefWidth="407.0" style="-fx-background-color: &quot;black&quot;;">
+                     <children>
+                        <Label layoutX="139.0" layoutY="26.0" text="Nombre:" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="tfNombre" layoutX="22.0" layoutY="63.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="358.0" promptText="Ingrese su nombre">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="141.0" layoutY="130.0" text="Apellido:" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="tfApellido" layoutX="22.0" layoutY="167.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="358.0" promptText="Ingrese su apellido...">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="158.0" layoutY="236.0" text="Edad:" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="tfEdad" layoutX="22.0" layoutY="273.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onKeyTyped" prefHeight="46.0" prefWidth="358.0" promptText="Ingrese su edad...">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="158.0" layoutY="338.0" text="Peso" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="tfPeso" layoutX="22.0" layoutY="375.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onKeyTyped" prefHeight="46.0" prefWidth="358.0" promptText="Ingrese su peso...">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="158.0" layoutY="446.0" text="Altura" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="tfAltura" layoutX="22.0" layoutY="483.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onKeyTyped" prefHeight="46.0" prefWidth="358.0" promptText="Ingrese su altura">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="171.0" layoutY="550.0" text="DPI:" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="tfDPI" layoutX="22.0" layoutY="587.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onKeyTyped" prefHeight="46.0" prefWidth="358.0" promptText="Ingrese su DPI...">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="149.0" layoutY="654.0" text="Correo:" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="tfCorreo" layoutX="22.0" layoutY="691.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="358.0" promptText="Ingrese su correo...">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="113.0" layoutY="759.0" text="Contraseña:" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="30.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="tfPassword" layoutX="25.0" layoutY="796.0" prefHeight="46.0" prefWidth="358.0" promptText="Ingrese su contraseña">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </PasswordField>
+                        <Label layoutX="163.0" layoutY="858.0" text="Sede" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="tfSede" layoutX="25.0" layoutY="895.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="358.0" promptText="Ingrese su sede...">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="131.0" layoutY="955.0" text="Objetivo:" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="30.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="cbSubir" layoutX="29.0" layoutY="992.0" mnemonicParsing="false" text="Subir peso" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="cbMantener" layoutX="144.0" layoutY="992.0" mnemonicParsing="false" text="Mantener peso" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="cbBajar" layoutX="285.0" layoutY="992.0" mnemonicParsing="false" text="Bajar Peso" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <Label layoutX="159.0" layoutY="1030.0" text="Plan:" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="30.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="cbBasico" layoutX="23.0" layoutY="1067.0" mnemonicParsing="false" text="Basico" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="cbFitness" layoutX="107.0" layoutY="1067.0" mnemonicParsing="false" text="Fitness" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="cbNutricional" layoutX="195.0" layoutY="1067.0" mnemonicParsing="false" text="Nutricional" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="cbPremium" layoutX="305.0" layoutY="1067.0" mnemonicParsing="false" text="Premium" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button fx:id="btnRegresar" layoutX="764.0" layoutY="651.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnRegresarClicked" prefHeight="59.0" prefWidth="232.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff; -fx-border-radius: 0; -fx-background-insets: 0; -fx-pressed-fill: #d9d9d9; -fx-background-insets: 1;" text="Regresar" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" translateX="-10.0">
+               <image>
+                  <Image url="@../img/regresar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

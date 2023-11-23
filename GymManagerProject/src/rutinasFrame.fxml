@@ -1,0 +1,1603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" style="-fx-background-color: transparent; -fx-background-image: url('img/background.png'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RutinasFrameController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/background.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="102.0" prefWidth="1280.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="618.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" text="RUTINA" textAlignment="CENTER" textFill="WHITE" translateY="20.0">
+               <font>
+                  <Font name="Montserrat Thin" size="47.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ScrollPane hbarPolicy="NEVER" layoutX="33.0" layoutY="114.0" opacity="0.9" prefHeight="458.0" prefWidth="947.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3000.0" prefWidth="933.0">
+               <children>
+                  <Pane prefHeight="3000.0" prefWidth="933.0" style="-fx-background-color: &quot;black&quot;;">
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="53.0" prefWidth="933.0" style="-fx-background-color: &quot;white&quot;;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="53.0" prefWidth="98.0" text="Lunes: " textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbGrupoLunes" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="297.0" text="&quot;Grupo muscular aquí&quot;" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutY="53.0" prefHeight="47.0" prefWidth="933.0" style="-fx-background-color: &quot;gray&quot;;">
+                           <children>
+                              <Label layoutX="216.0" layoutY="11.0" text="Ejercicio" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="563.0" layoutY="11.0" text="Repeticiones" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="722.0" layoutY="11.0" text="Series" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="809.0" layoutY="11.0" text="Descanso" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <VBox layoutY="100.0" prefHeight="359.0" prefWidth="933.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbLunesEjercicio1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesRepeticiones1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesSeries1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesDescanso1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbLunesEjercicio2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesRepeticiones2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesSeries2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesDescanso2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbLunesEjercicio3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesRepeticiones3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesSeries3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesDescanso3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbLunesEjercicio4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesRepeticiones4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesSeries4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesDescanso4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbLunesEjercicio5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesRepeticiones5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesSeries5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesDescanso5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbLunesEjercicio6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesRepeticiones6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesSeries6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbLunesDescanso6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="TOP_CENTER" layoutY="459.0" prefHeight="53.0" prefWidth="933.0" style="-fx-background-color: &quot;white&quot;;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="53.0" prefWidth="98.0" text="Martes:" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbGrupoMartes" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="297.0" text="&quot;Grupo muscular aquí&quot;" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutY="512.0" prefHeight="47.0" prefWidth="933.0" style="-fx-background-color: &quot;gray&quot;;">
+                           <children>
+                              <Label layoutX="216.0" layoutY="11.0" text="Ejercicio" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="563.0" layoutY="11.0" text="Repeticiones" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="722.0" layoutY="11.0" text="Series" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="809.0" layoutY="11.0" text="Descanso" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <VBox layoutY="559.0" prefHeight="359.0" prefWidth="933.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMartesEjercicio1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesRepeticiones1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesSeries1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesDescanso1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMartesEjercicio2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesRepeticiones2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesSeries2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesDescanso2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMartesEjercicio3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesRepeticiones3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesSeries3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesDescanso3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMartesEjercicio4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesRepeticiones4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesSeries4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesDescanso4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMartesEjercicio5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesRepeticiones5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesSeries5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesDescanso5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMartesEjercicio6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesRepeticiones6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesSeries6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMartesDescanso6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="TOP_CENTER" layoutY="918.0" prefHeight="53.0" prefWidth="933.0" style="-fx-background-color: &quot;white&quot;;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="53.0" prefWidth="139.0" text="Miercoles:" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbGrupoMiercoles" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="297.0" text="&quot;Grupo muscular aquí&quot;" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutY="971.0" prefHeight="47.0" prefWidth="933.0" style="-fx-background-color: &quot;gray&quot;;">
+                           <children>
+                              <Label layoutX="216.0" layoutY="11.0" text="Ejercicio" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="563.0" layoutY="11.0" text="Repeticiones" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="722.0" layoutY="11.0" text="Series" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="809.0" layoutY="11.0" text="Descanso" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <VBox layoutY="1018.0" prefHeight="359.0" prefWidth="933.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMiercolesEjercicio1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesRepeticiones1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesSeries1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesDescanso1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMiercolesEjercicio2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesRepeticiones2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesSeries2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesDescanso2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMiercolesEjercicio3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesRepeticiones3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesSeries3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesDescanso3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMiercolesEjercicio4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesRepeticiones4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesSeries4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesDescanso4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMiercolesEjercicio5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesRepeticiones5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesSeries5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesDescanso5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbMiercolesEjercicio6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesRepeticiones6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesSeries6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbMiercolesDescanso6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="TOP_CENTER" layoutY="1377.0" prefHeight="53.0" prefWidth="933.0" style="-fx-background-color: &quot;white&quot;;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="53.0" prefWidth="98.0" text="Jueves:" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbGrupoJueves" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="297.0" text="&quot;Grupo muscular aquí&quot;" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutY="1430.0" prefHeight="47.0" prefWidth="933.0" style="-fx-background-color: &quot;gray&quot;;">
+                           <children>
+                              <Label layoutX="216.0" layoutY="11.0" text="Ejercicio" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="563.0" layoutY="11.0" text="Repeticiones" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="722.0" layoutY="11.0" text="Series" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="809.0" layoutY="11.0" text="Descanso" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <VBox layoutY="1477.0" prefHeight="359.0" prefWidth="933.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbJuevesEjercicio1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesRepeticiones1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesSeries1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesDescanso1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbJuevesEjercicio2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesRepeticiones2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesSeries2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesDescanso2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbJuevesEjercicio3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesRepeticiones3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesSeries3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesDescanso3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbJuevesEjercicio4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesRepeticiones4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesSeries4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesDescanso4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbJuevesEjercicio5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesRepeticiones5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesSeries5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesDescanso5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbJuevesEjercicio6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesRepeticiones6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesSeries6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbJuevesDescanso6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="TOP_CENTER" layoutY="1836.0" prefHeight="53.0" prefWidth="933.0" style="-fx-background-color: &quot;white&quot;;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="53.0" prefWidth="98.0" text="Viernes:" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbGrupoViernes" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="297.0" text="&quot;Grupo muscular aquí&quot;" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutY="1889.0" prefHeight="47.0" prefWidth="933.0" style="-fx-background-color: &quot;gray&quot;;">
+                           <children>
+                              <Label layoutX="216.0" layoutY="11.0" text="Ejercicio" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="563.0" layoutY="11.0" text="Repeticiones" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="722.0" layoutY="11.0" text="Series" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="809.0" layoutY="11.0" text="Descanso" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <VBox layoutY="1936.0" prefHeight="359.0" prefWidth="933.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbViernesEjercicio1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesRepeticiones1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesSeries1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesDescanso1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbViernesEjercicio2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesRepeticiones2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesSeries2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesDescanso2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbViernesEjercicio3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesRepeticiones3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesSeries3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesDescanso3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbViernesEjercicio4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesRepeticiones4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesSeries4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesDescanso4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbViernesEjercicio5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesRepeticiones5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesSeries5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesDescanso5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbViernesEjercicio6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesRepeticiones6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesSeries6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbViernesDescanso6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="TOP_CENTER" layoutY="2295.0" prefHeight="53.0" prefWidth="933.0" style="-fx-background-color: &quot;white&quot;;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="53.0" prefWidth="98.0" text="Sabado" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbGrupoSabado" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="297.0" text="&quot;Grupo muscular aquí&quot;" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Century Gothic" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutY="2348.0" prefHeight="47.0" prefWidth="933.0" style="-fx-background-color: &quot;gray&quot;;">
+                           <children>
+                              <Label layoutX="216.0" layoutY="11.0" text="Ejercicio" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="563.0" layoutY="11.0" text="Repeticiones" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="722.0" layoutY="11.0" text="Series" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="809.0" layoutY="11.0" text="Descanso" textFill="WHITE">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <VBox layoutY="2395.0" prefHeight="359.0" prefWidth="933.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbSabadoEjercicio1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoRepeticiones1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoSeries1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoDescanso1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbSabadoEjercicio2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoRepeticiones2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoSeries2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoDescanso2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbSabadoEjercicio3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoRepeticiones3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoSeries3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoDescanso3" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbSabadoEjercicio4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoRepeticiones4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoSeries4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoDescanso4" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbSabadoEjercicio5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoRepeticiones5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoSeries5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoDescanso5" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="933.0">
+                                 <children>
+                                    <Label fx:id="lbSabadoEjercicio6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="564.0" text="Press de prueba como placeholder para la GUI" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoRepeticiones6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoSeries6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbSabadoDescanso6" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="120.0" text="100 min." textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button fx:id="btnRegresar" layoutX="754.0" layoutY="647.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnRegresarClicked" prefHeight="59.0" prefWidth="232.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff; -fx-border-radius: 0; -fx-background-insets: 0; -fx-pressed-fill: #d9d9d9; -fx-background-insets: 1;" text="Regresar" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" translateX="-10.0">
+               <image>
+                  <Image url="@../img/regresar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" style="-fx-background-color: transparent; -fx-background-image: url('img/background.png'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DisponibilidadFrameController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/background.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="102.0" prefWidth="1280.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="618.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" text="DISPONIBILIDAD" textAlignment="CENTER" textFill="WHITE" translateY="20.0">
+               <font>
+                  <Font name="Montserrat Thin" size="47.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="btnRegresar" layoutX="754.0" layoutY="641.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnRegresarClicked" prefHeight="59.0" prefWidth="232.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff; -fx-border-radius: 0; -fx-background-insets: 0; -fx-pressed-fill: #d9d9d9; -fx-background-insets: 1;" text="Regresar" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" translateX="-10.0">
+               <image>
+                  <Image url="@../img/regresar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ScrollPane hbarPolicy="NEVER" layoutX="56.0" layoutY="130.0" opacity="0.85" prefHeight="500.0" prefWidth="898.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="836.0" prefWidth="896.0">
+               <children>
+                  <Pane prefHeight="836.0" prefWidth="883.0" style="-fx-background-color: black;">
+                     <children>
+                        <VBox prefHeight="836.0" prefWidth="883.0">
+                           <children>
+                              <HBox prefHeight="41.0" prefWidth="883.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponibilidad">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina1" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo1" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible1" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina2" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo2" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible2" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina3" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo3" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible3" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina4" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo4" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible4" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina5" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo5" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible5" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina6" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo6" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible6" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina7" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo7" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible7" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina8" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo8" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible8" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="No disponible" textFill="#ff1b18">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina9" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo9" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible9" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina10" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo10" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible10" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina11" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo11" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible11" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina12" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo12" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible12" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina13" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo13" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible13" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina14" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo14" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible14" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="No disponible" textFill="#ff1b18">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label fx:id="lbMaquina15" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTipo15" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbDisponible15" alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="No disponible " textFill="#ff1b18">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="883.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Maquina Placeholder" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Tipo de ejercicio" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="434.0" text="Disponible" textFill="#60d034">
+                                       <font>
+                                          <Font name="Century Gothic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
