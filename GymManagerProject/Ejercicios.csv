@@ -1,0 +1,91 @@
+Ejercicio,Tipo,Repeticiones,Series,Descanso,Meta
+Sentadillas,Pierna,12-15,3-4,60-90s,Subir
+Prensa,Pierna,10-12,4-5,60-90s,Subir
+Extensiones,Pierna,15-20,3-4,45-60s,Bajar
+Curl de piernas,Pierna,12-15,3-4,60-75s,Mantener
+Zancadas,Pierna,10-12 por pierna,3-4,60-90s,Subir
+Elevación de talones,Pierna,15-20,3-4,45-60s,Bajar
+Sentadilla sumo,Pierna,12-15,3-4,60-75s,Mantener
+Glúteo Kickbacks,Pierna,15-20 por pierna,3-4,45-60s,Subir
+Step Ups,Pierna,12-15 por pierna,3-4,60-75s,Mantener
+Deadlift Rumanian,Pierna,8-10,4-5,90-120s,Subir
+Calf Raises,Pierna,15-20,3-4,45-60s,Bajar
+Jump Squats,Pierna,15-20,3-4,60-75s,Subir
+Leg Curls,Pierna,12-15,3-4,45-60s,Mantener
+Bulgarian Split Squat,Pierna,10-12 por pierna,3-4,60-75s,Mantener
+Side Lunges,Pierna,12-15 por lado,3-4,60-75s,Bajar
+Box Jumps,Pierna,10-12,3-4,60-75s,Subir
+Leg Press,Pierna,12-15,4-5,60-90s,Subir
+Hack Squat,Pierna,10-12,4-5,60-90s,Subir
+Press de banca,Pecho,8-12,4-5,90-120s,Subir
+Fondos,Pecho,Máximas,3-4,60-90s,Subir
+Aperturas,Pecho,12-15,3-4,60-75s,Mantener
+Pullover,Pecho,12-15,3-4,60-75s,Mantener
+Flexiones con peso,Pecho,Máximas,4-5,60-90s,Subir
+Fondos declinados,Pecho,Máximas,3-4,60-75s,Mantener
+Press Inclinado,Pecho,10-12,4-5,75-90s,Subir
+Pulldown,Pecho,12-15,3-4,60-75s,Mantener
+Push-ups,Pecho,Máximas,3-4,45-60s,Subir
+Flys,Pecho,12-15,3-4,60-75s,Bajar
+Bench Dips,Pecho,Máximas,3-4,45-60s,Subir
+Pulldown Tríceps,Pecho,12-15,3-4,45-60s,Bajar
+Press Declinado,Pecho,10-12,4-5,75-90s,Subir
+Dumbbell Pullover,Pecho,12-15,3-4,60-75s,Mantener
+Push-ups declinados,Pecho,Máximas,3-4,45-60s,Subir
+Cable Flys,Pecho,12-15,3-4,60-75s,Bajar
+Dumbbell Squeeze Press,Pecho,10-12,4-5,75-90s,Subir
+Machine Chest Press,Pecho,12-15,4-5,60-90s,Subir
+Dominadas,Espalda,Máximas,4-5,90-120s,Subir
+Pull-ups,Espalda,10-12,4-5,60-90s,Subir
+Peso muerto,Espalda,8-10,4-5,90-120s,Subir
+Remo con barra,Espalda,10-12,4-5,60-90s,Subir
+Hip Thrust,Espalda,12-15,3-4,60-75s,Mantener
+Hiperextensiones,Espalda,15-20,3-4,45-60s,Bajar
+Pulldown ancho,Espalda,12-15,4-5,60-75s,Mantener
+Face Pulls,Espalda,15-20,3-4,45-60s,Mantener
+T-Bar Row,Espalda,10-12,4-5,75-90s,Subir
+Lat Pulldown,Espalda,12-15,3-4,60-75s,Bajar
+Reverse Flys,Espalda,12-15,3-4,60-75s,Bajar
+Shrugs,Espalda,15-20,3-4,45-60s,Mantener
+Bent Over Rows,Espalda,10-12,4-5,75-90s,Subir
+Deadlift sumo,Espalda,8-10,4-5,90-120s,Subir
+One Arm Dumbbell Row,Espalda,12-15 por lado,3-4,60-75s,Mantener
+Inverted Rows,Espalda,Máximas,3-4,45-60s,Subir
+Cable Pulldowns,Espalda,12-15,3-4,60-75s,Bajar
+Rack Pulls,Espalda,10-12,4-5,75-90s,Subir
+Plancha,Abdomen,60s,3-4,30-45s,Mantener
+Crunch,Abdomen,15-20,3-4,45-60s,Bajar
+Oblicuos,Abdomen,12-15 por lado,3-4,45-60s,Mantener
+Russian twists,Abdomen,20-30,3-4,45-60s,Bajar
+Elevación de piernas,Abdomen,15-20,3-4,30-45s,Mantener
+Rollouts,Abdomen,12-15,3-4,60-75s,Subir
+Leg Raises,Abdomen,15-20,3-4,45-60s,Mantener
+Bicycle Crunches,Abdomen,20-30,3-4,45-60s,Bajar
+Dragon Flags,Abdomen,8-10,4-5,60-90s,Subir
+Plank Twist,Abdomen,12-15 por lado,3-4,45-60s,Mantener
+Hanging Leg Raises,Abdomen,15-20,3-4,45-60s,Mantener
+Woodchoppers,Abdomen,12-15 por lado,3-4,45-60s,Mantener
+Seated Russian Twist,Abdomen,20-30,3-4,45-60s,Bajar
+Plank to Pike,Abdomen,15-20,3-4,45-60s,Subir
+Hanging Windshield Wipers,Abdomen,10-12 por lado,3-4,60-75s,Subir
+V-Ups,Abdomen,15-20,3-4,45-60s,Bajar
+Medicine Ball Slam,Abdomen,20-30,3-4,45-60s,Subir
+Russian Twist with Ball,Abdomen,20-30,3-4,45-60s,Bajar
+Flexiones,Brazo,Máximas,3-4,60-90s,Subir
+Curl de bíceps,Brazo,12-15,3-4,45-60s,Mantener
+Tríceps dips,Brazo,Máximas,3-4,60-90s,Subir
+Fondos tríceps,Brazo,10-12,3-4,60-75s,Mantener
+Martillo,Brazo,12-15,3-4,45-60s,Mantener
+Flexiones diamante,Brazo,Máximas,3-4,60-90s,Subir
+Concentration curls,Brazo,12-15 por brazo,3-4,45-60s,Mantener
+Skull Crushers,Brazo,10-12,4-5,75-90s,Subir
+Hammer Curls,Brazo,12-15,3-4,60-75s,Mantener
+Tríceps Kickbacks,Brazo,15-20,3-4,45-60s,Bajar
+Barbell Curl,Brazo,10-12,4-5,60-75s,Subir
+Tríceps Overhead,Brazo,12-15,3-4,60-75s,Mantener
+Preacher Curl,Brazo,10-12,4-5,60-75s,Subir
+Tríceps Pushdown,Brazo,12-15,3-4,45-60s,Bajar
+Incline Dumbbell Curl,Brazo,12-15,3-4,60-75s,Mantener
+Tríceps Dumbbell,Brazo,15-20,3-4,45-60s,Mantener
+Cable Hammer Curls,Brazo,12-15,3-4,60-75s,Bajar
+Diamond Push-ups,Brazo,Máximas,3-4,45-60s,Subir

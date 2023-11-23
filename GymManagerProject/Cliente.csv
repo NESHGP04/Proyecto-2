@@ -1,0 +1,5 @@
+nombre,edad,dpi,peso,altura,metaPeso,id,rutinaID,dietaID,sede,password,correo,plan,
+Josue,19,95727568341055,248.0,1.69,1,1,1,1,Centro Comercial Metroplaza Mundo Maya,12345,josue123@gmail.com,Basico
+Kevin Villagrán,19,123123123,33.0,1.69,3,2,2,2,San Cristobal,12345,kevincorreo@gmail.com,Premium
+Carlos Perez,23,45454544543232,42.0,1.73,2,3,3,3,San Lucas,78965,carloselmejor@gmail.com,Nutricional
+admin admin,100,123123123,30.0,1.8,3,4,4,4,admin,admin,admin,Premium
